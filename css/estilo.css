@@ -1,13 +1,87 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-  background-color: blue; /*Pode escolher outra cor se quiser*/
+    background-color: #fceef2; /* Fundo rosa bem clarinho */
+    color: #333;
 }
 
-h1 {
-  color: white; /*Pode escolher outra cor se quiser*/
-  text-align: center;
+/* Cabeçalho */
+.topo {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ffd1dc;
+    margin-bottom: 30px;
 }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
+.topo h1 {
+    color: #ff6584; /* Rosa mais forte */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.topo p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Container da Galeria */
+.galeria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid de Fotos (Mosaico) */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+/* Card de cada foto */
+.foto-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse na foto */
+.foto-card:hover {
+    transform: translateY(-5px);
+}
+
+.foto-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+    display: block;
+}
+
+/* Legenda da foto */
+.legenda {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+    font-size: 0.95rem;
+    border-top: 1px solid #f9f9f9;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6584;
+    color: #fff;
+    font-size: 0.9rem;
 }
