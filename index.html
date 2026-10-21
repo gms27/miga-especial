@@ -5,25 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miga Especial</title>
 <style>
-  body { background:#fff8fb; font-family:Arial; margin:0; }
-    h1 { text-align:center; padding:30px 20px; font-size:34px; }
-      .galeria { 
-            display: grid;
-                grid-template-columns: 1fr 1fr;
-                    gap: 30px;
-                        max-width: 900px;
-                            margin: 0 auto;
-                                padding: 20px;
-      }
-      body { 
-          background-image: url('fundo.jpg');
-            background-size: cover; /* cobre a tela toda */
-              background-position: center;
-                background-attachment: fixed; /* fica parado quando rola */
-                  background-repeat: no-repeat;
-                    margin:0; 
-                      font-family:Arial; 
-                      }
+  body { 
+        background-image: linear-gradient(rgba(255,248,251,0.85), rgba(255,248,251,0.85)), url('fundo.jpg');
+            background-size: cover;
+                background-position: center;
+                    background-attachment: fixed;
+                        margin:0; 
+                            font-family:Arial; 
+                              }
+                                h1 { text-align:center; padding:30px 20px; font-size:34px; }
+                                  .galeria { 
+                                      display: grid;
+                                          grid-template-columns: 1fr 1fr;
+                                              gap: 30px;
+                                                  max-width: 900px;
+                                                      margin: 0 auto;
+                                                          padding: 20px;
+                                                            }
         .card { display:flex; flex-direction:column; align-items:center; }
           .card img { width:100%; height:380px; object-fit:cover; border-radius:16px; }
             .card p { font-size:17px; font-weight:bold; text-align:center; margin-top:12px; }
